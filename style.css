@@ -325,10 +325,10 @@ body {
   }
 }
 
-/* .about_box img {
+.about_box img {
   animation: float 3s ease-in-out infinite;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-} */
+}
 .education_item:hover,
 .box:hover,
 .project_item:hover,
