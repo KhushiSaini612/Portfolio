@@ -1,96 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khushi Saini | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">Khushi Saini</div>
-        <button id="darkModeToggle" class="dark-toggle">🌙</button>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khushi Saini | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <section id="about" class="section reveal">
-      <h1>About Me</h1>
-      <div class="about_box">
-        <img src="pic.jpg" alt="Picture" />
-        <div class="name_para">
-          <h2>KHUSHI SAINI</h2>
-          <p>
-            As a dedicated Computer Science student, I strive to apply my
+  <!-- Navbar -->
+ <header>
+  <nav class="navbar">
+    <div class="logo">Khushi Saini</div>
+    
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+
+    <button id="mode-toggle" class="mode-btn">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+  <div class="side-menu" id="side-menu">
+    <div class="close-btn" id="close-btn"><i class="fas fa-times"></i></div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+        <div class="pic">
+            <img src="pic.jpg" alt="Picture">
+        </div>
+        <div class="text">
+            <h1>Hi, I'm <span>Khushi Saini</span></h1>
+            <h2><span class="typing-text"></span></h2>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="Khushi Saini Resume in pdf general august.pdf" download class="btn">Resume</a>
+            </div>
+            <div class="social-icons">
+        <a href="https://github.com/KhushiSaini612" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:sainikhushi007@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/khushi-saini-ba105426a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      As a dedicated final year, Computer Science student at College of Engineering Roorkee, I strive to apply my
             problem-solving skills, creativity and technical knowledge to build
             innovative projects and scalable solutions. I am committed to
             continuous learning and growing in the field, aiming to make a
             meaningful impact in the tech industry.
-          </p>
+    </p>
+ 
+    
+    <div class="head">What Defines Me</div>
+  <div class="traits-container">
+    
+
+    <div class="trait-card">
+      <i class="fas fa-lightbulb"></i>
+      <h3>Curious Learner</h3>
+      <p>I always stay eager to explore new technologies and concepts, constantly learning to grow my skills.</p>
+    </div>
+
+    <div class="trait-card">
+      <i class="fas fa-puzzle-piece"></i>
+      <h3>Problem Solver</h3>
+      <p>Solved 450+ DSA problems on LeetCode and GeeksForGeeks with a strong grasp of DSA.</p>
+    </div>
+    
+
+    <div class="trait-card">
+      <i class="fas fa-heart"></i>
+      <h3>Passionate</h3>
+      <p>Passion drives me to work with dedication and creativity on projects that make an impact.</p>
+    </div>
+    
+  </div>
+
+</section>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skills_data">
+        <h1>Programming and Tools</h1>
+        <div class="skill_header">
+          <span>C</span>
+          <span>90%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:90%"></div></div>
+        <div class="skill_header">
+          <span>C++</span>
+          <span>90%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:90%"></div></div>
+        <div class="skill_header">
+          <span>Git</span>
+          <span>80%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:80%"></div></div>
+        <div class="skill_header">
+          <span>VS Code</span>
+          <span>90%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:90%"></div></div>
+        <div class="skill_header">
+          <span>Netbeans</span>
+          <span>80%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:80%"></div></div>
+      </div>
+      <div class="skills_data">
+        <h1>Frontend and Backend</h1>
+        <div class="skill_header">
+          <span>HTML</span>
+          <span>95%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:95%"></div></div>
+        <div class="skill_header">
+          <span>CSS</span>
+          <span>95%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:95%"></div></div>
+        <div class="skill_header">
+          <span>JavaScript</span>
+          <span>85%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:85%"></div></div>
+        <div class="skill_header">
+          <span>Bootstrap</span>
+          <span>80%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:80%"></div></div>
+        <div class="skill_header">
+          <span>MySQL</span>
+          <span>80%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:80%"></div></div>
+        <div class="skill_header">
+          <span>MongoDB</span>
+          <span>80%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:80%"></div></div>
+      </div>
+      <div class="skills_data">
+        <h1>Core Subjects</h1>
+        <div class="skill_header">
+          <span>Data Structures and Algorithms</span>
+          <span>85%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:85%"></div></div>
+        <div class="skill_header">
+          <span>Object Oriented Programmings</span>
+          <span>85%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:85%"></div></div>
+        <div class="skill_header">
+          <span>Database Management System</span>
+          <span>80%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:80%"></div></div>
+        <div class="skill_header">
+          <span>Computer Network</span>
+          <span>75%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:75%"></div></div>
+        <div class="skill_header">
+          <span>Operating System</span>
+          <span>75%</span>
+        </div>
+        <div class="progress-bar"><div style="--progress:75%"></div></div>
+      </div>
+    </div>
+    
+    <!-- Competencies -->
+  
+    <h2>Core Competencies</h2>
+    <div class="competencies-container">
+      <div class="circle-skill">
+        <svg>
+          <circle cx="50" cy="50" r="45"></circle>
+          <circle cx="50" cy="50" r="45" style="--percent:90"></circle>
+        </svg>
+        <h2>90%</h2>
+        <div>Problem Solving</div>
+      </div>
+      <div class="circle-skill">
+        <svg>
+          <circle cx="50" cy="50" r="45"></circle>
+          <circle cx="50" cy="50" r="45" style="--percent:85"></circle>
+        </svg>
+        <h2>85%</h2>
+        <div>Team Leadership</div>
+      </div>
+      <div class="circle-skill">
+        <svg>
+          <circle cx="50" cy="50" r="45"></circle>
+          <circle cx="50" cy="50" r="45" style="--percent:85"></circle>
+        </svg>
+        <h2>85%</h2>
+        <div>Logical Thinking</div>
+      </div>
+      <div class="circle-skill">
+        <svg>
+          <circle cx="50" cy="50" r="45"></circle>
+          <circle cx="50" cy="50" r="45" style="--percent:90"></circle>
+        </svg>
+        <h2>90%</h2>
+        <div>Continuous Improvement</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Education -->
+  <section id="education" class="section reveal">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="arrange">
+            <div>
+            <img src="coer_logo.jpg" alt="">
+        </div>
+        <div>
+            <h3>College of Engineering Roorkee (UTU)</h3>
+  
+        <p>
+            B.Tech CSE (2022 - Present) <br />
+            <div class="marks">CGPA: 8.1</div>
+        </p>
+        </div>
         </div>
       </div>
-    </section>
-
-    <section id="education" class="section reveal">
-      <h1>Education</h1>
-      <div class="education_box">
-        <div class="education_item">
-          <div class="edu_data">
-            <strong>College of Engineering Roorkee (UTU)</strong>
-            <br />B.Tech CSE (2022 - Present) <br />CGPA: 8.1
-          </div>
-          <div class="edu_img">
-            <img src="coer_logo.jpg" style=" border-radius: 15px;" alt="COER Logo" />
-          </div>
+      <div class="timeline-item right">
+        <div class="arrange">
+            <div>
+            <img src="gms_logo.png" alt="">
         </div>
-        <div class="education_item">
-          <div class="edu_data">
-            <strong>Greenway Modern Sr. Sec. School</strong>
-            <br />XII (2021-2022) <br />93.4%
-          </div>
-          <div class="edu_img">
-            <img src="gms_logo.png" style=" border-radius: 15px;" alt="GMS Logo" />
-          </div>
+        <div>
+            <h3>Greenway Modern Sr. Sec. School</h3>
+        <p>
+            XII PCM-CBSE (2021-2022) <br />
+            <div class="marks">Percentage: 93.4%</div>
+        </p>
         </div>
-        <div class="education_item">
-          <div class="edu_data">
-            <strong>Greenway Modern Sr. Sec. School</strong>
-            <br />X (2019-2020) <br />
-            96.6%
-          </div>
-          <div class="edu_img">
-            <img src="gms_logo.png" style=" border-radius: 15px;" alt="GMS Logo" />
-          </div>
+        </div>
+            
+      </div>
+      <div class="timeline-item left">
+        <div class="arrange">
+            <div>
+            <img src="gms_logo.png" alt="">
+        </div>
+        <div>
+            <h3>Greenway Modern Sr. Sec. School</h3>
+        <p>
+            X-CBSE (2019-2020) <br />
+            <div class="marks">Percentage: 96.6%</div>
+        </p>
+        </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-
-    <section id="projects" class="section reveal">
-      <h1>Projects</h1>
-      <div class="project_data">
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+    <div class="project_data">
         <div class="project_item">
           <div class="project_img_data">
             <h1>Library Management System WebApp</h1>
             <img src="lib.png" style="width: 99%; height: 30%; border-radius: 15px;" alt="Library Management System" />
             <br />
-            <div>
-
-              <strong>Technologies Used:</strong> Java Swing, MySQL,Apache NetBeans
+            Developed a desktop-based library management system which enables real-time book issuing and returning with statistics and fine calculations.
+            <div class="tech">
+              <div>Java Swing</div>
+              <div>MySQL</div>
+              <div>Apache NetBeans</div>
             </div>
-            • Developed a desktop-based library management system with GUI built
-            using Java Swing with MySQL database. <br />
-            • Enabled real-time book issuing and returning with statistics and fine calculations.
           </div>
         </div>
         <div class="project_item">
@@ -98,14 +323,19 @@
             <h1>Virtual Herbal Garden Website for AYUSH Sector</h1>
             <img src="vhg.png" style="width: 99%; height: 30%; border-radius: 15px;" alt="Virtual Herbal Garden" />
             <br />
-            <div>
-
-              <strong>Technologies Used:</strong> HTML, CSS, JavaScript, Node.js, Express, MongoDB, Three.js, Handlebars
-            </div>
-            • A full stack web application to explore medicinal plants via 3D
-            models. <br />
-            • Implement search, filter and theme-based navigation to enhance
+            
+            A full stack web application to explore medicinal plants in AYUSH Sector with search, filter and theme-based navigation along with 3D models to enhance
             accessibility and learning.
+            <div class="tech">
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>JavaScript</div>
+              <div>Node.js</div>
+              <div>Express</div>
+              <div>MongoDB</div>
+              <div>Three.js</div>
+              <div>Handlebars</div>
+            </div>
           </div>
         </div>
 
@@ -114,178 +344,25 @@
             <h1>Real-time News Application</h1>
             <img src="news.png" style="width: 99%; height: 30%; border-radius: 15px;" alt="News Application" />
             <br />
-            <div>
-
-              <strong>Technologies Used:</strong> HTML, CSS, JavaScript, News API
+            Developed a dynamic news website that fetches real-time news from APIs with country and category filters.
+            <div class="tech">
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>JavaScript</div>
+              <div>News API</div>
             </div>
-            • A dynamic category-based news application fetching real-time data
-            using API. <br />
-            • Display real-time updates filtered by country and category.
           </div>
         </div>
       </div>
-    </section>
+  </section>
 
-    <section id="skills" class="section reveal">
-      <h1>Skills</h1>
-      <div class="skills-container">
-        <div class="programming_lang box">
-          <h2>Programming Language</h2>
-          <div class="skills_data">
-            <div class="skill_name">C</div>
-            <div class="skill_img">
-              <img style="width: 50px; height: 50px" src="c.png" alt="C" />
-            </div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">C++</div>
-            <div class="skill_img">
-              <img style="width: 50px; height: 50px" src="cpp.png" alt="CPP" />
-            </div>
-          </div>
-          <!-- <div class="skills_data">
-            <div class="skill_name">Python</div>
-            <div class="skill_img">
-              <img
-                style="width: 50px; height: 50px"
-                src="python.webp"
-                alt="Python"
-              />
-            </div>
-          </div> -->
-          <!-- <div class="skills_data">
-            <div class="skill_name">Java</div>
-            <div class="skill_img">
-              <img
-                style="width: 50px; height: 50px"
-                src="java.png"
-                alt="Java"
-              />
-            </div>
-          </div> -->
-        </div>
-        <div class="web_dev box">
-          <h2>Web Development</h2>
-          <div class="skills_data">
-            <div class="skill_name">HTML</div>
-            <div class="skill_img">
-              <img
-                style="width: 50px; height: 50px"
-                src="html.png"
-                alt="HTML"
-              />
-            </div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">CSS</div>
-            <div class="skill_img">
-              <img style="width: 50px; height: 50px" src="css.jpg" alt="CSS" />
-            </div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">JavaScript</div>
-            <div class="skill_img">
-              <img
-                style="width: 50px; height: 50px"
-                src="js.png"
-                alt="JavaScript"
-              />
-            </div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Bootstrap</div>
-            <div class="skill_img">
-              <img
-                style="width: 50px; height: 50px"
-                src="bootstrap.svg"
-                alt="Bootstrap"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="database box">
-          <h2>Database Management</h2>
-          <div class="skills_data">
-            <div class="skill_name">MySQL</div>
-            <div class="skill_img">
-              <img
-                style="width: 50px; height: 50px"
-                src="mysql.png"
-                alt="MySQL"
-              />
-            </div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">MongoDB</div>
-            <div class="skill_img">
-              <img
-                style="width: 50px; height: 50px"
-                src="mongodb.png"
-                alt="MongoDB"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="core_concepts box">
-          <h2>Core Concepts</h2>
-          <div class="skills_data">
-            <div class="skill_name">Data Structures and Algorithm</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Computer Network</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Operating System</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Database Management System</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Object Oriented Programmings</div>
-          </div>
-        </div>
-        <div class="dev_tools box">
-          <h2>Development Tools</h2>
-          <div class="skills_data">
-            <div class="skill_name">VS Code</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Jupyter Notebook</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Github</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Git</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">NetBeans</div>
-          </div>
-        </div>
-        <div class="soft_skills box">
-          <h2>Soft Skills</h2>
-          <div class="skills_data">
-            <div class="skill_name">Problem Solving</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Team Management</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Fast Learner</div>
-          </div>
-          <div class="skills_data">
-            <div class="skill_name">Continuous Improvement</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section reveal">
-      <h1>Experience</h1>
-      <div class="experience_data">
-        <div class="experience_item">
-          <h2>Web Development and Designing Intern</h2> 
-          <span>Oasis Infobyte (July-Aug 2023)</span>
+  <section id="experience" class="section reveal">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+     
+          <p>Web Development and Designing Intern</h> 
+          <div class="heading">Oasis Infobyte (July-Aug 2023)</div>
           Created Landing Page, Portfolio and Temperature Converter Website.
           <div class="internship_lang">
             <div class="flex_lang">HTML
@@ -298,11 +375,12 @@
               <img src="js.png" style="width: 50px; height: 50px" alt="">
             </div>
           </div>
-        </div>
-
-        <div class="experience_item">
-          <h2>Web Development Intern</h2> 
-          <span>Let's Grow More (July-Aug 2023)</span> 
+       
+      </div>
+      <div class="timeline-item right">
+     
+          <p>Web Development Intern</p> 
+          <div class="heading">Let's Grow More (July-Aug 2023)</div> 
           Created To Do List WebApp, Calculator and Registration Form.
           <div class="internship_lang">
             <div class="flex_lang">HTML
@@ -315,81 +393,187 @@
               <img src="js.png" style="width: 50px; height: 50px" alt="">
             </div>
           </div>
-        </div>
-
-        <div class="experience_item">
-          <h2>Deloitte Australia Technology Job Simulation on Forage</h2>
-          <span>Deloitte Australia (July 2025)</span>
+ 
+            
+      </div>
+      <div class="timeline-item left">
+       
+          <p>Deloitte Australia Technology Job Simulation on Forage</p>
+          <div class="heading">Deloitte Australia (July 2025)</div>
           Completed dashboard development simulation & proposal writing.
-        </div>
+      
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="section reveal">
-      <h1>Contact</h1>
-      <div class="contact_data">
-        <div class="contact_item">
-          <div class="contact_img">
-            <img style="width: 50px; height: 50px" src="mail.png" alt="Mail" />
-          </div>
-          <a href="mailto:sainikhushi007@gmail.com">Mail</a>
-        </div>
-        <div class="contact_item">
-          <div class="contact_img">
-            <img
-              style="width: 50px; height: 50px"
-              src="linkedin.png"
-              alt="LinkedIn"
-            />
-          </div>
-          <a
-            href="https://www.linkedin.com/in/khushi-saini-ba105426a/"
-            target="_blank"
-            >LinkedIn</a
-          >
-        </div>
 
-        <div class="contact_item">
-          <div class="contact_img">
-            <img
-              style="width: 50px; height: 50px"
-              src="github.png"
-              alt="Github"
-            />
-          </div>
-          <a href="https://github.com/KhushiSaini612" target="_blank">GitHub</a>
-        </div>
+  <!-- Contact -->
+<section id="contact" class="section contact-section reveal">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    
+    <!-- Left: Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    
+    <!-- Right: Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><i class="fas fa-envelope"></i> sainikhushi007@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 6397744894</p>
+      <div class="social-icons">
+        <a href="https://github.com/KhushiSaini612" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:sainikhushi007@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/khushi-saini-ba105426a/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
-    </section>
+    </div>
+    
+  </div>
+</section>
 
-   <script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("show");
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      </div>
+      
+      
+    </div>
+    <p>© 2025 Khushi Saini | All Rights Reserved</p>
+  </footer>
+
+
+  <script>
+  const roles = ["C/C++ Programmer", "Tech Enthusiast", "Web Developer", "Fast Learner"];
+  let index = 0;         
+  let charIndex = 0;     
+  let isDeleting = false; 
+  const typingText = document.querySelector(".typing-text");
+
+  function typeEffect() {
+    const fullText = roles[index];
+
+    if (!isDeleting && charIndex <= fullText.length) {
+   
+      typingText.textContent = fullText.substring(0, charIndex);
+      charIndex++;
+    } else if (isDeleting && charIndex >= 0) {
+   
+      typingText.textContent = fullText.substring(0, charIndex);
+      charIndex--;
+    }
+
+    let typingSpeed = isDeleting ? 60 : 120; 
+
+    if (!isDeleting && charIndex === fullText.length + 1) {
+     
+      typingSpeed = 1500; 
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+    
+      isDeleting = false;
+      index = (index + 1) % roles.length;
+      typingSpeed = 500; 
+    }
+
+    setTimeout(typeEffect, typingSpeed);
   }
 
-  // Dark mode toggle
-  const toggleBtn = document.getElementById("darkModeToggle");
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀" : "🌙";
+  typeEffect();
+
+    window.addEventListener("scroll", reveal);
+    function reveal() {
+      const reveals = document.querySelectorAll(".reveal");
+      for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+  
+  const modeToggle = document.getElementById("mode-toggle");
+  const body = document.body;
+
+  modeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+  
+    if (body.classList.contains("dark-mode")) {
+      modeToggle.innerHTML = `<i class="fas fa-sun"></i>`; 
+    } else {
+      modeToggle.innerHTML = `<i class="fas fa-moon"></i>`;
+    }
   });
 
-  // Scroll Reveal Effect
-  const reveals = document.querySelectorAll(".reveal");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links li a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.clientHeight;
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
       }
     });
-  }, {
-    threshold: 0.1,
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
   });
 
-  reveals.forEach(reveal => {
-    observer.observe(reveal);
+const hamburger = document.getElementById("hamburger");
+const sideMenu = document.getElementById("side-menu");
+const closeBtn = document.getElementById("close-btn");
+
+
+hamburger.addEventListener("click", () => {
+  sideMenu.style.right = "0";
+});
+
+
+closeBtn.addEventListener("click", () => {
+  sideMenu.style.right = "-100%";
+});
+
+
+const sideLinks = sideMenu.querySelectorAll("a");
+sideLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    sideMenu.style.right = "-100%";
   });
-</script>
-  </body>
+});
+
+
+
+  </script>
+
+</body>
 </html>
