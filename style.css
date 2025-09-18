@@ -453,6 +453,10 @@ circle:nth-child(2) {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     margin: 10px;
 }
+.tech div a{
+  color: white;
+  text-decoration: none;
+}
 .project_data{
     display: flex;
     justify-content: center;
