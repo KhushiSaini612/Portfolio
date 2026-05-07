@@ -1,599 +1,787 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khushi Saini | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- Navbar -->
- <header>
-  <nav class="navbar">
-    <div class="logo">Khushi Saini</div>
-    
-    <div class="hamburger" id="hamburger">
-      <i class="fas fa-bars"></i>
-    </div>
-    
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-
-    <button id="mode-toggle" class="mode-btn">
-      <i class="fas fa-moon"></i>
-    </button>
-  </nav>
-  <div class="side-menu" id="side-menu">
-    <div class="close-btn" id="close-btn"><i class="fas fa-times"></i></div>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <div class="hero-content">
-        <div class="pic">
-            <img src="pic.jpg" alt="Picture">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khushi Saini | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Khushi Saini</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="mode-btn" id="mode-btn">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-        <div class="text">
-            <h1>Hi, I'm <span>Khushi Saini</span></h1>
-            <h2><span class="typing-text"></span></h2>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="Khushi Saini Resume in pdf general.pdf" download class="btn">Resume</a>
+      </nav>
+    </header>
+
+    <!-- SIDE MENU -->
+    <div class="side-menu" id="side-menu">
+      <div class="close-btn" id="close-btn"><i class="fas fa-times"></i></div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg-deco">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-pic-wrap">
+          <img
+            src="pic.jpg"
+            alt="Khushi Saini"
+            class="hero-pic"
+            onerror="
+              this.src =
+                'https://ui-avatars.com/api/?name=Khushi+Saini&size=190&background=c9a84c&color=fff&font-size=0.4'
+            "
+          />
+        </div>
+        <div>
+          <p class="hero-greeting">✦ Hello, World!</p>
+          <h1 class="hero-name">Hi, I'm <span>Khushi Saini</span></h1>
+          <p class="hero-role">
+            <span id="typing" class="typing-cursor"></span>
+          </p>
+        </div>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a
+            href="Khushi Saini Resume in pdf general.pdf"
+            download
+            class="btn-outline"
+            ><i class="fas fa-download" style="margin-right: 6px"></i>Resume</a
+          >
+        </div>
+        <div class="hero-socials">
+          <a
+            href="https://github.com/KhushiSaini612"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:sainikhushi007@gmail.com" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/khushi-saini-ba105426a/"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <div id="about-wrapper">
+      <section id="about" class="section reveal">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          As a passionate final-year Computer Science student at College of
+          Engineering Roorkee, I blend creativity with technical depth to build
+          innovative, scalable solutions. With a strong foundation in full-stack
+          development and competitive programming, I aim to make a meaningful
+          impact in the tech industry — one project at a time.
+        </p>
+        <p class="defines-title">What Defines Me</p>
+        <div class="traits-grid">
+          <div class="trait-card">
+            <div class="trait-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>Curious Learner</h3>
+            <p>
+              Always eager to explore new technologies and concepts, constantly
+              leveling up my skills.
+            </p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <h3>Problem Solver</h3>
+            <p>
+              Solved 450+ DSA problems on LeetCode & GeeksForGeeks with a strong
+              algorithmic mindset.
+            </p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon"><i class="fas fa-heart"></i></div>
+            <h3>Passionate Builder</h3>
+            <p>
+              Passion drives me to craft projects with purpose, dedication, and
+              attention to detail.
+            </p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon"><i class="fas fa-code"></i></div>
+            <h3>Full Stack Dev</h3>
+            <p>
+              Comfortable across the stack — from pixel-perfect frontends to
+              robust backend APIs.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skills-card">
+          <div class="skills-card-title">
+            <i class="fas fa-tools" style="margin-right: 8px"></i>Programming &
+            Tools
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>C</span><span>80%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
             </div>
-            <div class="social-icons">
-        <a href="https://github.com/KhushiSaini612" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:sainikhushi007@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/khushi-saini-ba105426a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>C++</span><span>80%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>PHP</span><span>75%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="75%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>Git</span><span>75%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="75%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>VS Code</span><span>80%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
         </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="section reveal">
-    <h2>About Me</h2>
-    <p>
-      As a dedicated final year, Computer Science student at College of Engineering Roorkee, I strive to apply my
-            problem-solving skills, creativity and technical knowledge to build
-            innovative projects and scalable solutions. I am committed to
-            continuous learning and growing in the field, aiming to make a
-            meaningful impact in the tech industry.
-    </p>
- 
-    
-    <div class="head">What Defines Me</div>
-  <div class="traits-container">
-    
+        <div class="skills-card">
+          <div class="skills-card-title">
+            <i class="fas fa-layer-group" style="margin-right: 8px"></i>Frontend
+            & Backend
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">
+              <span>HTML + CSS</span><span>80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">
+              <span>JavaScript</span><span>65%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="65%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>React.js</span><span>60%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="60%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>Node.js</span><span>60%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="60%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">
+              <span>Express.js</span><span>65%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="65%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>MySQL</span><span>80%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>MongoDB</span><span>80%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">
+              <span>phpMyAdmin</span><span>80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+        </div>
 
-    <div class="trait-card">
-      <i class="fas fa-lightbulb"></i>
-      <h3>Curious Learner</h3>
-      <p>I always stay eager to explore new technologies and concepts, constantly learning to grow my skills.</p>
-    </div>
-
-    <div class="trait-card">
-      <i class="fas fa-puzzle-piece"></i>
-      <h3>Problem Solver</h3>
-      <p>Solved 450+ DSA problems on LeetCode and GeeksForGeeks with a strong grasp of DSA.</p>
-    </div>
-    
-
-    <div class="trait-card">
-      <i class="fas fa-heart"></i>
-      <h3>Passionate</h3>
-      <p>Passion drives me to work with dedication and creativity on projects that make an impact.</p>
-    </div>
-    
-  </div>
-
-</section>
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-  <!-- Skills -->
-  <section id="skills" class="section reveal">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skills_data">
-        <h1>Programming and Tools</h1>
-        <div class="skill_header">
-          <span>C</span>
-          <span>90%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:90%"></div></div>
-        <div class="skill_header">
-          <span>C++</span>
-          <span>90%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:90%"></div></div>
-        <div class="skill_header">
-          <span>Git</span>
-          <span>85%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:85%"></div></div>
-        <div class="skill_header">
-          <span>Github</span>
-          <span>85%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:85%"></div></div>
-        <div class="skill_header">
-          <span>VS Code</span>
-          <span>90%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:90%"></div></div>
-        <div class="skill_header">
-          <span>Netbeans</span>
-          <span>80%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:80%"></div></div>
-      </div>
-      <div class="skills_data">
-        <h1>Frontend and Backend</h1>
-        <div class="skill_header">
-          <span>HTML + CSS</span>
-          <span>95%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:95%"></div></div>
-        <div class="skill_header">
-          <span>JavaScript</span>
-          <span>85%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:85%"></div></div>
-        <div class="skill_header">
-          <span>React.js</span>
-          <span>75%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:75%"></div></div>
-        <div class="skill_header">
-          <span>Node.js</span>
-          <span>75%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:75%"></div></div>
-        <div class="skill_header">
-          <span>Express.js</span>
-          <span>75%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:75%"></div></div>
-        <div class="skill_header">
-          <span>MySQL</span>
-          <span>80%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:80%"></div></div>
-        <div class="skill_header">
-          <span>MongoDB</span>
-          <span>80%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:80%"></div></div>
-      </div>
-      <div class="skills_data">
-        <h1>Core Subjects</h1>
-        <div class="skill_header">
-          <span>Data Structures and Algorithms</span>
-          <span>85%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:85%"></div></div>
-        <div class="skill_header">
-          <span>Object Oriented Programmings</span>
-          <span>85%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:85%"></div></div>
-        <div class="skill_header">
-          <span>Database Management System</span>
-          <span>80%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:80%"></div></div>
-        <div class="skill_header">
-          <span>Computer Network</span>
-          <span>75%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:75%"></div></div>
-        <div class="skill_header">
-          <span>Operating System</span>
-          <span>75%</span>
-        </div>
-        <div class="progress-bar"><div style="--progress:75%"></div></div>
-      </div>
-    </div>
-    
-    <!-- Competencies -->
-  
-    <h2>Core Competencies</h2>
-    <div class="competencies-container">
-      <div class="circle-skill">
-        <svg>
-          <circle cx="50" cy="50" r="45"></circle>
-          <circle cx="50" cy="50" r="45" style="--percent:90"></circle>
-        </svg>
-        <h2>90%</h2>
-        <div>Problem Solving</div>
-      </div>
-      <div class="circle-skill">
-        <svg>
-          <circle cx="50" cy="50" r="45"></circle>
-          <circle cx="50" cy="50" r="45" style="--percent:85"></circle>
-        </svg>
-        <h2>85%</h2>
-        <div>Team Leadership</div>
-      </div>
-      <div class="circle-skill">
-        <svg>
-          <circle cx="50" cy="50" r="45"></circle>
-          <circle cx="50" cy="50" r="45" style="--percent:85"></circle>
-        </svg>
-        <h2>85%</h2>
-        <div>Logical Thinking</div>
-      </div>
-      <div class="circle-skill">
-        <svg>
-          <circle cx="50" cy="50" r="45"></circle>
-          <circle cx="50" cy="50" r="45" style="--percent:90"></circle>
-        </svg>
-        <h2>90%</h2>
-        <div>Continuous Improvement</div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Education -->
-  <section id="education" class="section reveal">
-    <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item left">
-        <div class="arrange">
-            <div>
-            <img src="coer_logo.jpg" alt="">
-        </div>
-        <div>
-            <h3>College of Engineering Roorkee (UTU)</h3>
-  
-        <p>
-            B.Tech CSE (2022 - Present) <br />
-            <div class="marks">CGPA: 8.1</div>
-        </p>
-        </div>
+        <div class="skills-card">
+          <div class="skills-card-title">
+            <i class="fas fa-book" style="margin-right: 8px"></i>Core Subjects
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">
+              <span>Data Structures & Algo</span><span>80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>OOPS</span><span>80%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><span>DBMS</span><span>80%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">
+              <span>Computer Networks</span><span>75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="75%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">
+              <span>Operating Systems</span><span>75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="75%"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="timeline-item right">
-        <div class="arrange">
-            <div>
-            <img src="gms_logo.png" alt="">
-        </div>
-        <div>
-            <h3>Greenway Modern Sr. Sec. School</h3>
-        <p>
-            XII PCM-CBSE (2021-2022) <br />
-            <div class="marks">Percentage: 93.4%</div>
-        </p>
-        </div>
-        </div>
+
+      <h2 class="competencies-title">Core Competencies</h2>
+      <div class="comp-grid">
+        <div class="comp-item">
+          <div class="comp-circle">
+            <svg>
+              <defs>
+  <linearGradient id="GradientColor" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#7c4dff"/>
+    <stop offset="100%" stop-color="#00c6ff"/>
+  </linearGradient>
+</defs>
+              <circle class="comp-track" r="50" cx="60" cy="60" />
+              <circle
+                class="comp-prog"
+                r="50"
+                cx="60"
+                cy="60"
+                style="--dash: calc(314 - 314 * 85/100)"
+              />
+            </svg>
             
+            <div class="comp-num">85%</div>
+          </div>
+          <div class="comp-label">Problem Solving</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-circle">
+            <svg>
+              <defs>
+  <linearGradient id="GradientColor" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#7c4dff"/>
+    <stop offset="100%" stop-color="#00c6ff"/>
+  </linearGradient>
+</defs>
+              <circle class="comp-track" r="50" cx="60" cy="60" />
+              <circle
+                class="comp-prog"
+                r="50"
+                cx="60"
+                cy="60"
+                style="--dash: calc(314 - 314 * 80/100)"
+              />
+            </svg>
+            <div class="comp-num">80%</div>
+          </div>
+          <div class="comp-label">Team Leadership</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-circle">
+            <svg>
+              <defs>
+  <linearGradient id="GradientColor" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#7c4dff"/>
+    <stop offset="100%" stop-color="#00c6ff"/>
+  </linearGradient>
+</defs>
+              <circle class="comp-track" r="50" cx="60" cy="60" />
+              <circle
+                class="comp-prog"
+                r="50"
+                cx="60"
+                cy="60"
+                style="--dash: calc(314 - 314 * 80/100)"
+              />
+            </svg>
+            <div class="comp-num">80%</div>
+          </div>
+          <div class="comp-label">Logical Thinking</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-circle">
+            <svg>
+              <defs>
+  <linearGradient id="GradientColor" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#7c4dff"/>
+    <stop offset="100%" stop-color="#00c6ff"/>
+  </linearGradient>
+</defs>
+              <circle class="comp-track" r="50" cx="60" cy="60" />
+              <circle
+                class="comp-prog"
+                r="50"
+                cx="60"
+                cy="60"
+                style="--dash: calc(314 - 314 * 90/100)"
+              />
+            </svg>
+            <div class="comp-num">90%</div>
+          </div>
+          <div class="comp-label">Continuous Improvement</div>
+        </div>
       </div>
-      <div class="timeline-item left">
-        <div class="arrange">
-            <div>
-            <img src="gms_logo.png" alt="">
+    </section>
+
+    <!-- EDUCATION -->
+    <div id="edu-wrapper">
+      <section id="education" class="section reveal">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <img
+                src="coer_logo.jpg"
+                alt="COER"
+                class="edu-logo"
+                onerror="this.style.display = 'none'"
+              />
+              <h3>College of Engineering Roorkee (UTU)</h3>
+              <p>B.Tech CSE &nbsp;|&nbsp; 2022 – Present</p>
+              <span class="edu-badge">CGPA: 8.1</span>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <img
+                src="gms_logo.png"
+                alt="GMS"
+                class="edu-logo"
+                onerror="this.style.display = 'none'"
+              />
+              <h3>Greenway Modern Sr. Sec. School</h3>
+              <p>XII PCM – CBSE &nbsp;|&nbsp; 2021 – 2022</p>
+              <span class="edu-badge">93.4%</span>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <img
+                src="gms_logo.png"
+                alt="GMS"
+                class="edu-logo"
+                onerror="this.style.display = 'none'"
+              />
+              <h3>Greenway Modern Sr. Sec. School</h3>
+              <p>X – CBSE &nbsp;|&nbsp; 2019 – 2020</p>
+              <span class="edu-badge">96.6%</span>
+            </div>
+          </div>
         </div>
-        <div>
-            <h3>Greenway Modern Sr. Sec. School</h3>
-        <p>
-            X-CBSE (2019-2020) <br />
-            <div class="marks">Percentage: 96.6%</div>
-        </p>
-        </div>
-        </div>
-      </div>
+      </section>
     </div>
-  </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section reveal">
-    <h2>Projects</h2>
-    <div class="project_data">
-        <div class="project_item">
-          <div class="project_img_data">
-            <h1>Library Management System WebApp</h1>
-            <img src="lib.png" style="width: 99%; height: 30%; border-radius: 15px;" alt="Library Management System" />
-            <br />
-            <div class="tech">
-              <div><a href="https://github.com/KhushiSaini612/Library-Management-System-Project">Github</a></div>
-            </div>
-            Developed a desktop-based library management system which enables real-time book issuing and returning with statistics and fine calculations.
-            <div class="tech">
-              <div>Java Swing</div>
-              <div>MySQL</div>
-              <div>Apache NetBeans</div>
-            </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img
+              src="lib.png"
+              alt="Library Management System"
+              class="project-img"
+              onerror="
+                this.src =
+                  'https://placehold.co/340x190/1a1a2e/c9a84c?text=Library+Management'
+              "
+            />
           </div>
-        </div>
-        <div class="project_item">
-          <div class="project_img_data">
-            <h1>Virtual Herbal Garden Website for AYUSH Sector</h1>
-            <img src="vhg.png" style="width: 99%; height: 30%; border-radius: 15px;" alt="Virtual Herbal Garden" />
-            <br />
-            <div class="tech">
-              <div><a href="https://github.com/KhushiSaini612/Virtual-Herbal-Garden-Project">Github</a></div>
-              <div><a href="https://virtual-herbal-garden-project-4.onrender.com">View Live</a></div>
+          <div class="project-body">
+            <h3>Library Management System WebApp</h3>
+            <p class="project-desc">
+              Desktop-based system enabling real-time book issuing & returning
+              with statistics and fine calculations.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/KhushiSaini612/Library-Management-System-Project"
+                target="_blank"
+                class="project-link github"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
             </div>
-            A full stack web application to explore medicinal plants in AYUSH Sector with search, filter and theme-based navigation along with 3D models to enhance
-            accessibility and learning.
-            <div class="tech">
-              <div>HTML</div>
-              <div>CSS</div>
-              <div>JavaScript</div>
-              <div>Node.js</div>
-              <div>Express</div>
-              <div>MongoDB</div>
-              <div>Three.js</div>
-              <div>Handlebars</div>
+            <div class="project-tags">
+              <span class="project-tag">Java Swing</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">NetBeans</span>
             </div>
           </div>
         </div>
 
-        <div class="project_item">
-          <div class="project_img_data">
-            <h1>Real-time News Application</h1>
-            <img src="news.png" style="width: 99%; height: 30%; border-radius: 15px;" alt="News Application" />
-            <br />
-            <div class="tech">
-              <div><a href="https://github.com/KhushiSaini612/News-Project">Github</a></div>
-              <div><a href="http://khushisaini612.github.io/News-Project/">View Live</a></div>
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img
+              src="vhg.png"
+              alt="Virtual Herbal Garden"
+              class="project-img"
+              onerror="
+                this.src =
+                  'https://placehold.co/340x190/1a1a2e/c9a84c?text=Virtual+Herbal+Garden'
+              "
+            />
+          </div>
+          <div class="project-body">
+            <h3>Virtual Herbal Garden — AYUSH</h3>
+            <p class="project-desc">
+              Full-stack web app to explore medicinal plants with search,
+              filter, theme-based navigation & 3D models.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/KhushiSaini612/Virtual-Herbal-Garden-Project"
+                target="_blank"
+                class="project-link github"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+              <a
+                href="https://virtual-herbal-garden-project-4.onrender.com"
+                target="_blank"
+                class="project-link live"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
             </div>
-            Developed a dynamic news website that fetches real-time news from APIs with country and category filters.
-            <div class="tech">
-              <div>HTML</div>
-              <div>CSS</div>
-              <div>JavaScript</div>
-              <div>News API</div>
+            <div class="project-tags">
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">Three.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img
+              src="news.png"
+              alt="News App"
+              class="project-img"
+              onerror="
+                this.src =
+                  'https://placehold.co/340x190/1a1a2e/c9a84c?text=News+Application'
+              "
+            />
+          </div>
+          <div class="project-body">
+            <h3>Real-time News Application</h3>
+            <p class="project-desc">
+              Dynamic news website fetching live headlines via API with country
+              and category filters.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/KhushiSaini612/News-Project"
+                target="_blank"
+                class="project-link github"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+              <a
+                href="http://khushisaini612.github.io/News-Project/"
+                target="_blank"
+                class="project-link live"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">News API</span>
             </div>
           </div>
         </div>
       </div>
-  </section>
+    </section>
 
-  <section id="experience" class="section reveal">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item left">
-     
-          <p>Web Development and Designing Intern</h> 
-          <div class="heading">Oasis Infobyte (July-Aug 2023)</div>
-          Created Landing Page, Portfolio and Temperature Converter Website.
-          <div class="internship_lang">
-            <div class="flex_lang">HTML
-              <img src="html.png" style="width: 50px; height: 50px" alt="">
-            </div>
-            <div class="flex_lang">CSS
-              <img src="css.jpg" style="width: 50px; height: 50px" alt="">
-            </div>
-            <div class="flex_lang">JavaScript
-              <img src="js.png" style="width: 50px; height: 50px" alt="">
-            </div>
-          </div>
-       
-      </div>
-      <div class="timeline-item right">
-     
-          <p>Web Development Intern</p> 
-          <div class="heading">Let's Grow More (July-Aug 2023)</div> 
-          Created To Do List WebApp, Calculator and Registration Form.
-          <div class="internship_lang">
-            <div class="flex_lang">HTML
-              <img src="html.png" style="width: 50px; height: 50px" alt="">
-            </div>
-            <div class="flex_lang">CSS
-              <img src="css.jpg" style="width: 50px; height: 50px" alt="">
-            </div>
-            <div class="flex_lang">JavaScript
-              <img src="js.png" style="width: 50px; height: 50px" alt="">
-            </div>
-          </div>
- 
-            
-      </div>
-      <div class="timeline-item left">
-       
-          <p>Deloitte Australia Technology Job Simulation on Forage</p>
-          <div class="heading">Deloitte Australia (July 2025)</div>
-          Completed dashboard development simulation & proposal writing.
-      
-      </div>
-    </div>
-  </section>
+    <!-- EXPERIENCE -->
+    <div id="exp-wrapper">
+      <section id="experience" class="section reveal">
+        <h2 class="section-title">Experience</h2>
+        <div class="exp-grid">
+          <div class="exp-card">
+  <span class="exp-tag">Internship</span>
 
+  <h3>PHP Laravel Developer Intern</h3>
 
-  <!-- Contact -->
-<section id="contact" class="section contact-section reveal">
-  <h2>Contact Me</h2>
-  <div class="contact-container">
-    
-    <!-- Left: Form -->
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    
-    <!-- Right: Contact Info -->
-    <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p><i class="fas fa-envelope"></i> sainikhushi007@gmail.com</p>
-      <p><i class="fas fa-phone"></i> +91 6397744894</p>
-      <div class="social-icons">
-        <a href="https://github.com/KhushiSaini612" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:sainikhushi007@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/khushi-saini-ba105426a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-    
+  <div class="exp-period">
+    <i class="fas fa-building" style="margin-right: 6px"></i>
+    AK Software Solutions, Dehradun
+    &nbsp;|&nbsp; December 2025 – April 2026
   </div>
-</section>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <ul class="exp-list">
+    <li>
+      Worked on multiple real-time web projects using PHP (Laravel Framework).
+    </li>
 
+    <li>
+      Developed and maintained backend modules including authentication,
+      CRUD operations, and role-based access.
+    </li>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-links">
-      <div class="footer-nav">
+    <li>
+      Designed and optimized relational databases using MySQL.
+    </li>
+
+    <li>
+      Implemented REST APIs for seamless frontend-backend communication.
+    </li>
+
+    <li>
+      Debugged and resolved production-level issues, improving system efficiency.
+    </li>
+
+    <li>
+      Collaborated with team members to enhance project functionality
+      and user experience.
+    </li>
+  </ul>
+</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-wrapper">
+        <form class="contact-form" onsubmit="return false;">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">
+            <i class="fas fa-paper-plane" style="margin-right: 8px"></i>Send
+            Message
+          </button>
+        </form>
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="contact-info-row">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <span>sainikhushi007@gmail.com</span>
+          </div>
+          <div class="contact-info-row">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <span>+91 6397744894</span>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/KhushiSaini612" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="mailto:sainikhushi007@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/khushi-saini-ba105426a/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-links">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </div>
-      
-      
-    </div>
-    <p>© 2025 Khushi Saini | All Rights Reserved</p>
-  </footer>
+      <p class="footer-copy">
+        © 2026 Khushi Saini &nbsp;·&nbsp; All Rights Reserved
+      </p>
+    </footer>
 
-
-  <script>
-  const roles = ["C/C++ Programmer", "Tech Enthusiast", "Web Developer", "Problem Solver"];
-  let index = 0;         
-  let charIndex = 0;     
-  let isDeleting = false; 
-  const typingText = document.querySelector(".typing-text");
-
-  function typeEffect() {
-    const fullText = roles[index];
-
-    if (!isDeleting && charIndex <= fullText.length) {
-   
-      typingText.textContent = fullText.substring(0, charIndex);
-      charIndex++;
-    } else if (isDeleting && charIndex >= 0) {
-   
-      typingText.textContent = fullText.substring(0, charIndex);
-      charIndex--;
-    }
-
-    let typingSpeed = isDeleting ? 60 : 120; 
-
-    if (!isDeleting && charIndex === fullText.length + 1) {
-     
-      typingSpeed = 1500; 
-      isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-    
-      isDeleting = false;
-      index = (index + 1) % roles.length;
-      typingSpeed = 500; 
-    }
-
-    setTimeout(typeEffect, typingSpeed);
-  }
-
-  typeEffect();
-
-    window.addEventListener("scroll", reveal);
-    function reveal() {
-      const reveals = document.querySelectorAll(".reveal");
-      for (let i = 0; i < reveals.length; i++) {
-        let windowHeight = window.innerHeight;
-        let elementTop = reveals[i].getBoundingClientRect().top;
-        let elementVisible = 150;
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
+    <script>
+      // ---- TYPING EFFECT ----
+      const roles = [
+        "C/C++ Programmer",
+        "Tech Enthusiast",
+        "Full Stack Developer",
+        "Problem Solver",
+      ];
+      let ri = 0,
+        ci = 0,
+        del = false;
+      const el = document.getElementById("typing");
+      function type() {
+        const cur = roles[ri];
+        if (!del) {
+          el.textContent = cur.slice(0, ++ci);
         } else {
-          reveals[i].classList.remove("active");
+          el.textContent = cur.slice(0, --ci);
         }
+        let sp = del ? 55 : 110;
+        if (!del && ci === cur.length) {
+          sp = 1600;
+          del = true;
+        } else if (del && ci === 0) {
+          del = false;
+          ri = (ri + 1) % roles.length;
+          sp = 450;
+        }
+        setTimeout(type, sp);
       }
-    }
+      type();
 
-  
-  const modeToggle = document.getElementById("mode-toggle");
-  const body = document.body;
-
-  modeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-
-  
-    if (body.classList.contains("dark-mode")) {
-      modeToggle.innerHTML = `<i class="fas fa-sun"></i>`; 
-    } else {
-      modeToggle.innerHTML = `<i class="fas fa-moon"></i>`;
-    }
-  });
-
-
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav-links li a");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100;
-      const sectionHeight = section.clientHeight;
-
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute("id");
+      // ---- REVEAL ON SCROLL ----
+      const reveals = document.querySelectorAll(".reveal");
+      function doReveal() {
+        reveals.forEach((r) => {
+          if (r.getBoundingClientRect().top < window.innerHeight - 80)
+            r.classList.add("active");
+        });
       }
-    });
+      window.addEventListener("scroll", doReveal);
+      doReveal();
 
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href").includes(current)) {
-        link.classList.add("active");
-      }
-    });
-  });
+      // ---- THEME TOGGLE ----
+const modeBtn = document.getElementById("mode-btn");
 
-const hamburger = document.getElementById("hamburger");
-const sideMenu = document.getElementById("side-menu");
-const closeBtn = document.getElementById("close-btn");
+modeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light");
 
-
-hamburger.addEventListener("click", () => {
-  sideMenu.style.right = "0";
+  modeBtn.innerHTML = document.body.classList.contains("light")
+    ? '<i class="fas fa-moon"></i>'
+    : '<i class="fas fa-sun"></i>';
 });
 
+      // ---- NAV ACTIVE ----
+      const sections = document.querySelectorAll("section");
+      const navAs = document.querySelectorAll(".nav-links a");
+      window.addEventListener("scroll", () => {
+        let cur = "";
+        sections.forEach((s) => {
+          if (scrollY >= s.offsetTop - 120) cur = s.id;
+        });
+        navAs.forEach((a) => {
+          a.classList.remove("active");
+          if (a.getAttribute("href") === "#" + cur) a.classList.add("active");
+        });
+      });
 
-closeBtn.addEventListener("click", () => {
-  sideMenu.style.right = "-100%";
-});
+      // ---- HAMBURGER ----
+      const menu = document.getElementById("side-menu");
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", () => menu.classList.add("open"));
+      document
+        .getElementById("close-btn")
+        .addEventListener("click", () => menu.classList.remove("open"));
+      menu
+        .querySelectorAll("a")
+        .forEach((a) =>
+          a.addEventListener("click", () => menu.classList.remove("open")),
+        );
 
+      // SKILL BAR ANIMATION
+      const skillBars = document.querySelectorAll(".progress-fill");
 
-const sideLinks = sideMenu.querySelectorAll("a");
-sideLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    sideMenu.style.right = "-100%";
-  });
-});
+      const skillObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const bar = entry.target;
 
+              const width = bar.getAttribute("data-width");
 
+              bar.style.width = width;
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
 
-  </script>
+      skillBars.forEach((bar) => {
+        skillObserver.observe(bar);
+      });
 
-</body>
+      
+    </script>
+  </body>
 </html>
